@@ -6,3 +6,5 @@ Assembly-CSharp.csproj
 *.sln
 *.vsconfig
 Temp
+.vs
+obj
