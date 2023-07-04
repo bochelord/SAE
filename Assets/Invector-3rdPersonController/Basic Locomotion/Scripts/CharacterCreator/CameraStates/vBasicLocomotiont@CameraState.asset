@@ -17,10 +17,10 @@ MonoBehaviour:
   - Name: Default
     forward: -1
     right: 0
-    defaultDistance: 2.5
+    defaultDistance: 12
     maxDistance: 80
     minDistance: 0.6
-    height: 1.25
+    height: 2.15
     smooth: 10
     smoothDamp: 2
     xMouseSensitivity: 3
@@ -32,15 +32,15 @@ MonoBehaviour:
     rotationOffSet: {x: 0.84, y: 0.99, z: 0}
     cullingHeight: 1.8
     cullingMinDist: 0.01
-    fov: 60
+    fov: 85.5
     useZoom: 0
-    fixedAngle: {x: 360, y: 78}
+    fixedAngle: {x: 0, y: 0}
     lookPoints:
     - pointName: point_01
       positionPoint: {x: 0, y: 1, z: -10}
       eulerAngle: {x: -0, y: 0, z: 0}
       freeRotation: 0
-    cameraMode: 0
+    cameraMode: 2
   - Name: Sprinting
     forward: -1
     right: 0
