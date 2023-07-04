@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_SAEGAME/Scenes/Startup.unity
+    guid: da13216d7192cc943bad136625b6977c
+  - enabled: 1
+    path: Assets/_SAEGAME/Scenes/Intro.unity
+    guid: 9fff8813340e3f94b87ae3f44cf41412
   m_configObjects: {}
