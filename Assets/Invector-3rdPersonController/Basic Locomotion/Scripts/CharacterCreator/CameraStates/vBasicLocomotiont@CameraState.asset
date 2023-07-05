@@ -17,7 +17,7 @@ MonoBehaviour:
   - Name: Default
     forward: -1
     right: 0
-    defaultDistance: 12
+    defaultDistance: 7
     maxDistance: 80
     minDistance: 0.6
     height: 2.15
@@ -40,7 +40,7 @@ MonoBehaviour:
       positionPoint: {x: 0, y: 1, z: -10}
       eulerAngle: {x: -0, y: 0, z: 0}
       freeRotation: 0
-    cameraMode: 2
+    cameraMode: 0
   - Name: Sprinting
     forward: -1
     right: 0
