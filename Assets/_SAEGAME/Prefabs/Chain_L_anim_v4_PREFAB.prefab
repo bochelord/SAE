@@ -1752,7 +1752,7 @@ GameObject:
   - component: {fileID: 2391466354313188944}
   - component: {fileID: 2147737620341489815}
   m_Layer: 0
-  m_Name: Chain_L_anim_v4PROPERPREFAB
+  m_Name: Chain_L_anim_v4_PREFAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
