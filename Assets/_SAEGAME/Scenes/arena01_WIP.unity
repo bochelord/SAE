@@ -4159,7 +4159,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &250827723
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4176,7 +4176,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &250827724
 Transform:
   m_ObjectHideFlags: 0
@@ -31533,6 +31534,7 @@ GameObject:
   - component: {fileID: 1240745609}
   - component: {fileID: 1240745608}
   - component: {fileID: 1240745610}
+  - component: {fileID: 1240745611}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -31607,6 +31609,14 @@ Skybox:
   m_GameObject: {fileID: 1240745606}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: e40cf3dddb958ef42af28c4788b8d460, type: 2}
+--- !u!81 &1240745611
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240745606}
+  m_Enabled: 1
 --- !u!1 &1240827244
 GameObject:
   m_ObjectHideFlags: 0
@@ -52626,7 +52636,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &1950004242
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -52643,7 +52653,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1950004243
 Transform:
   m_ObjectHideFlags: 0
