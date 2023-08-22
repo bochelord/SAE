@@ -998,6 +998,7 @@ MonoBehaviour:
   faderDelay: 1.5
   buttonPlay: {fileID: 1806394247}
   buttonQuit: {fileID: 764239254}
+  monsterImage: {fileID: 864515330}
 --- !u!4 &1257586497
 Transform:
   m_ObjectHideFlags: 0
@@ -1048,7 +1049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -105.2, y: 42.5}
+  m_AnchoredPosition: {x: -105.20001, y: 42.5}
   m_SizeDelta: {x: 200, y: 38.1882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473266132
@@ -1568,14 +1569,14 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 659507597}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 31
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

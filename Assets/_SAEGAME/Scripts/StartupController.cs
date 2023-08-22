@@ -14,7 +14,8 @@ public class StartupController : MonoBehaviour
     public float faderDelay = 1.5f;
     public Button buttonPlay;
     public Button buttonQuit;
-
+    public Image monsterImage;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class StartupController : MonoBehaviour
             Application.Quit();
         });
 
+
+        monsterImage.transform.DOScale(1.5f, 0.025f).SetLoops(-1,LoopType.Yoyo).SetEase(Ease.Linear).SetSpeedBased();
     }
 
 
