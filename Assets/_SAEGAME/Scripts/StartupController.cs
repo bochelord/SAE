@@ -42,10 +42,6 @@ public class StartupController : MonoBehaviour
         monsterImage.transform.DOScale(1.5f, 0.025f).SetLoops(-1,LoopType.Yoyo).SetEase(Ease.Linear).SetSpeedBased();
     }
 
-
-    
-
-
     private void LoadIntro()
     {
 
