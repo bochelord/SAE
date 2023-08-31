@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05863049, g: 0.039825253, b: 0.0080920085, a: 1}
+  m_IndirectSpecularColor: {r: 0.058630295, g: 0.03982505, b: 0.008091998, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6093,7 +6093,7 @@ PrefabInstance:
     - target: {fileID: -7975769282422568204, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b6db47e2c2ff1f54f8ace81a5a5dd8f2, type: 2}
+      objectReference: {fileID: 2100000, guid: ab44c0d78ef1ab046b3f34f5be6149c9, type: 2}
     - target: {fileID: -7973812159416334337, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6138,6 +6138,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d25d5d1e9c31840478caf6951ce00ab3, type: 2}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.00921288
+      objectReference: {fileID: 0}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.00921288
+      objectReference: {fileID: 0}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.00921288
+      objectReference: {fileID: 0}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000000059605
+      objectReference: {fileID: 0}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1611
+      objectReference: {fileID: 0}
+    - target: {fileID: -7611743664460304574, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.6e-14
+      objectReference: {fileID: 0}
     - target: {fileID: -7549608729216121162, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8049,7 +8073,7 @@ PrefabInstance:
     - target: {fileID: 5125032213264367753, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: de08a4dc8757c6e44be45880a421828c, type: 2}
+      objectReference: {fileID: 2100000, guid: 48b4170e5fd0ffb4e859455021b57c65, type: 2}
     - target: {fileID: 5170640412314896095, guid: 5632e0cece70ec84fbae050d9063bd00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20444,7 +20468,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6125191, b: 0.5707547, a: 1}
+  m_Color: {r: 1, g: 0.65297735, b: 0.6179246, a: 1}
   m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
@@ -32039,7 +32063,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &523153749
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32056,8 +32080,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &523153750
 Transform:
   m_ObjectHideFlags: 0
@@ -52677,7 +52700,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &867277820
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -52694,8 +52717,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &867277821
 Transform:
   m_ObjectHideFlags: 0
@@ -62324,7 +62346,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &1201124482
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -62341,8 +62363,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1201124483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71923,7 +71944,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1577556704
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -71940,8 +71961,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1578206454
 GameObject:
   m_ObjectHideFlags: 0
@@ -72275,7 +72295,7 @@ MonoBehaviour:
   startWithAlphaFull: 0
 --- !u!95 &1579795800
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -72292,8 +72312,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1579795801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83542,7 +83561,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!95 &1971218066
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -83559,8 +83578,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &1975513456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -83859,7 +83877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.039
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -83867,7 +83885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.956
+      value: -10.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -89162,7 +89180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.63
+      value: -8.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -89170,7 +89188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.77
+      value: -11.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e25d9f15af144ad44b4bdd3e253c1e5a, type: 3}
       propertyPath: m_LocalRotation.w

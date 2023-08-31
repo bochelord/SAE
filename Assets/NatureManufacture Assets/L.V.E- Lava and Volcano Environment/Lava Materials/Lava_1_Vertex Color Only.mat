@@ -333,7 +333,7 @@ Material:
     - _BigCascadeMixSpeed: {r: 0.02, g: 0.28, b: 0, a: 0}
     - _CascadeColor: {r: 20, g: 20, b: 20, a: 0}
     - _ColdLavaAlbedoColor: {r: 1, g: 1, b: 1, a: 0}
-    - _ColdLavaMainSpeed: {r: 0, g: 0.025, b: 0, a: 0}
+    - _ColdLavaMainSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _Color0: {r: 0, g: 0.6749488, b: 0.8088235, a: 0}
     - _Color1: {r: 0, g: 0.048731543, b: 0.22794023, a: 0}
     - _DeepColor: {r: 0.05708845, g: 0.095184885, b: 0.23528743, a: 0}
@@ -344,7 +344,7 @@ Material:
     - _HotLavaMainSpeed: {r: 0, g: 0.03, b: 0, a: 0}
     - _HotLavaMixSpeed: {r: 0, g: 0.03, b: 0, a: 0}
     - _MediumLavaAlbedoColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MediumLavaMainSpeed: {r: 0, g: 0.03, b: 0, a: 0}
+    - _MediumLavaMainSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseSpeed: {r: 0.3, g: 0.2, b: 0, a: 0}
     - _RimColor: {r: 1, g: 0, b: 0, a: 0}
     - _ShalowColor: {r: 0.5060554, g: 0.6617647, b: 0.61666334, a: 0}
