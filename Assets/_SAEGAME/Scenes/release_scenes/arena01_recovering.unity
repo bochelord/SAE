@@ -19348,7 +19348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCloseEvents: 0
   openCloseWindow: 1
-  selectedToolbar: 0
+  selectedToolbar: 1
   _isDead: 0
   _currentHealth: 0
   isImmortal: 0
@@ -19463,7 +19463,7 @@ MonoBehaviour:
   randomIdleTime: 0
   useContinuousSprint: 1
   sprintOnlyFree: 1
-  customFixedTimeStep: 2
+  customFixedTimeStep: 1
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
   jumpTimer: 0.3

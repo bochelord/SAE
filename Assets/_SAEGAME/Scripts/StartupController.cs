@@ -20,6 +20,9 @@ public class StartupController : MonoBehaviour
 
     public CanvasGroup buttonCanvasGroup;
     public CanvasGroup titleCanvasGroup;
+
+
+    public AudioSource main_music_source;
     
     // Start is called before the first frame update
     void Start()
@@ -64,13 +67,10 @@ public class StartupController : MonoBehaviour
 
     private void LoadIntro()
     {
-
         //Fake delay
         faderImage.DOFade(1, faderDelay).OnComplete(() => {
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         });
-
-
     }
 
     public void CloseCredits()
