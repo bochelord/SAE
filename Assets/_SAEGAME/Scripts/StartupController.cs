@@ -11,23 +11,43 @@ public class StartupController : MonoBehaviour
     public Image faderImage;
     public GameObject graphyDebug;
     public bool showGraphyDebugConsole;
-    public float faderDelay = 1.5f;
+    public float faderDelay = 4f;
     public Button buttonPlay;
     public Button buttonQuit;
     public Image monsterImage;
+
+    public GameObject creditsPanel;
+
+    public CanvasGroup buttonCanvasGroup;
+    public CanvasGroup titleCanvasGroup;
     
     // Start is called before the first frame update
     void Start()
     {
-        faderImage.DOFade(0, faderDelay).OnComplete(() => {
-            if (showGraphyDebugConsole)
-            {
-                graphyDebug.SetActive(true);
-            }
-            
-            //LoadIntro();
-        });
 
+        buttonCanvasGroup.alpha = 0;
+
+        titleCanvasGroup.alpha = 0;
+        if (!faderImage.IsActive())
+        {
+            faderImage.gameObject.SetActive(true);
+        }
+
+        faderImage.DOFade(1, 2).OnComplete(() => {
+
+            faderImage.DOFade(0, faderDelay).OnComplete(() => {
+                if (showGraphyDebugConsole)
+                {
+                    graphyDebug.SetActive(true);
+                }
+
+                titleCanvasGroup.DOFade(1, faderDelay).OnComplete(() => {
+                    buttonCanvasGroup.DOFade(1, faderDelay);
+                });
+
+            });
+
+        });
 
         //subscribe to buttons
         buttonPlay.onClick.AddListener(() => {
@@ -46,12 +66,20 @@ public class StartupController : MonoBehaviour
     {
 
         //Fake delay
-        faderImage.DOFade(1, faderDelay/2).OnComplete(() => {
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        faderImage.DOFade(1, faderDelay).OnComplete(() => {
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         });
 
 
     }
 
+    public void CloseCredits()
+    {
+        creditsPanel.gameObject.SetActive(false);
+    }
 
+    public void ShowCredits()
+    {
+        creditsPanel.gameObject.SetActive(true);
+    }
 }
