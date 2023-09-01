@@ -5476,7 +5476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLife: 0
   pausePanel: {fileID: 1645265358}
-  gameoverPanel: {fileID: 0}
+  gameoverPanel: {fileID: 298573291}
 --- !u!4 &1978295318
 Transform:
   m_ObjectHideFlags: 0
