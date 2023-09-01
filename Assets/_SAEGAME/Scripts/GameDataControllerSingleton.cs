@@ -9,6 +9,7 @@ public class GameDataControllerSingleton : Singleton<GameDataControllerSingleton
 
     public float playerLife;
     public RectTransform pausePanel;
+    public RectTransform gameoverPanel;
 
     private bool game_paused = false;
 
@@ -23,6 +24,7 @@ public class GameDataControllerSingleton : Singleton<GameDataControllerSingleton
         if (game_paused && Input.GetKeyDown(KeyCode.Q))
         {
             pausePanel.gameObject.SetActive(false);
+            gameoverPanel.gameObject.SetActive(false);
             game_paused = false;
             Time.timeScale = 1;
 
@@ -59,5 +61,11 @@ public class GameDataControllerSingleton : Singleton<GameDataControllerSingleton
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
+
+    public void GameOver()
+    {
+        gameoverPanel.gameObject.SetActive(true);
+
+    }
 
 }

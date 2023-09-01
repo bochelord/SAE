@@ -9607,6 +9607,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692544006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692544007}
+  m_Layer: 0
+  m_Name: ---DeadLogic---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692544007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692544006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1274.216, y: 589.06726, z: -2.5430431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1765859893}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692861125
 GameObject:
   m_ObjectHideFlags: 0
@@ -18539,6 +18571,7 @@ GameObject:
   - component: {fileID: 1054612425}
   - component: {fileID: 1054612424}
   - component: {fileID: 1054612423}
+  - component: {fileID: 1054612437}
   m_Layer: 8
   m_Name: ---vMeleeController_Dargo_character_V5---
   m_TagString: Player
@@ -18728,7 +18761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 1
+  openCloseWindow: 0
   selectedToolbar: 2
   OnDoAction:
     m_PersistentCalls:
@@ -19348,7 +19381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCloseEvents: 0
   openCloseWindow: 1
-  selectedToolbar: 1
+  selectedToolbar: 8
   _isDead: 0
   _currentHealth: 0
   isImmortal: 0
@@ -19366,7 +19399,19 @@ MonoBehaviour:
       m_Calls: []
   _onDead:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1765859894}
+        m_TargetAssemblyTypeName: GameOverRelay, Assembly-CSharp
+        m_MethodName: OnGameover
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1054612421}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DargoDead
+          m_BoolArgument: 0
+        m_CallState: 1
   onChangeHealth:
     m_PersistentCalls:
       m_Calls: []
@@ -19587,6 +19632,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1054612437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054612421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605ff11ee57b0c241a82c0c37c40c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openCloseEvents: 0
+  openCloseWindow: 1
+  selectedToolbar: 0
+  messagesListeners:
+  - Name: DargoDead
+    receiveFromGlobal: 1
+    onReceiveMessage:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1765859894}
+          m_TargetAssemblyTypeName: GameOverRelay, Assembly-CSharp
+          m_MethodName: OnGameover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
 --- !u!1 &1059627811
 GameObject:
   m_ObjectHideFlags: 0
@@ -23116,6 +23194,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b88998527e5784e80f1b6592724eb7, type: 3}
+--- !u!1 &1765859892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765859893}
+  - component: {fileID: 1765859894}
+  m_Layer: 0
+  m_Name: GameOverRelay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1765859893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765859892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692544007}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765859894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765859892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b76b8199e4d334e93ea8a36551f9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781272031
 GameObject:
   m_ObjectHideFlags: 0
@@ -43589,6 +43711,38 @@ PrefabInstance:
       propertyPath: pathArea
       value: 
       objectReference: {fileID: 1554031803}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: selectedToolbar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1765859894}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGameover
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverRelay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326267030404472718, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
+      propertyPath: _onDead.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ac1d5da00742714cbdd531f615bd0e1, type: 3}
 --- !u!4 &2330043938074754989
