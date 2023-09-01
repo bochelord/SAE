@@ -2,14 +2,17 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Lava_rocks_set_03_BC_SM
   m_Shader: {fileID: 4800000, guid: 4e059242ef121004cb8a66e0fd817e9c, type: 3}
-  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -71,6 +74,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AmbientOcclusionPower: 1
     - _BumpScale: 1
@@ -98,8 +102,9 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.75, g: 0.95169926, b: 1, a: 1}
     - _EmissionColor: {r: 1.052, g: 1.052, b: 1.052, a: 1}
     - _LavaEmissionColor: {r: 1, g: 0.18620357, b: 0, a: 0}
     - _LavaNoiseSpeed: {r: -0.2, g: -0.5, b: 0, a: 0}
     - _RimColor: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

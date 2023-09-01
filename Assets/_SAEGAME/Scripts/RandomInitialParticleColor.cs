@@ -10,29 +10,17 @@ public class RandomInitialParticleColor : MonoBehaviour
 
     private void Awake()
     {
+        
+        Color colorFresco = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f), 255f);
 
-        Color colorFresco = new Color(Random.Range(0, 255f), Random.Range(0, 255f), Random.Range(0, 255f), 255f);
+        Color colorFresco2 = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f), 255f);
+        
+        //con la variable Color hay que usar valores entre 0 y 1f
+        //si quieres usar valores entre 0 y 255f hay que usar la variable Color32
+        //Hassen Code
+        ParticleSystem.MainModule psMain = GetComponent<ParticleSystem>().main;
+        psMain.startColor = new ParticleSystem.MinMaxGradient(colorFresco, colorFresco2);
 
-        Color colorFresco2 = new Color(Random.Range(0, 255f), Random.Range(0, 255f), Random.Range(0, 255f), 255f);
-
-
-        var main = ParticleSystem.main;
-
-
-        main.startColor = new Color(Random.Range(0, 255f), Random.Range(0, 255f), Random.Range(0, 255f), 255f);
-
-
-        Debug.Log($"el color random es: {colorFresco}");
-
-
-        var main2 = ParticleSystem.main;
-        main.startColor = new ParticleSystem.MinMaxGradient(colorFresco, colorFresco2);
-
-
-
-        var randomColors = new ParticleSystem.MinMaxGradient(colorFresco, colorFresco2);
-        randomColors.mode = ParticleSystemGradientMode.RandomColor;
-        main.startColor = randomColors;
     }
 
 }
